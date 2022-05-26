@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger | Ayothegod</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="button"><div class="span">+</div></button>
+    <nav class="nav">
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Google</a></li>
+    </nav>
+    <script>
+        const button = document.querySelector('.button')
+        const span = document.querySelector('.span')
+        const nav = document.querySelector('.nav')
+        button.addEventListener('click',openNav)
+
+        function openNav(){
+            nav.classList.toggle('active')
+            button.classList.toggle('active')
+            span.classList.toggle('active')
+
+        }
+    </script>
+</body>
+</html>

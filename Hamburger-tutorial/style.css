@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+button{
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.span.active{
+    transform: rotate(45deg);
+}
+button.active{
+    transform: translateX(-100px) ;
+    background-color: red;
+
+}
+.nav.active{
+    transform: translateX(0);
+}
+.nav{
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: rebeccapurple;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    padding: 2rem;
+    color: white;
+}

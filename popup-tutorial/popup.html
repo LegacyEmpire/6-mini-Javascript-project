@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up | must-work@Ayothegod</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="content">
+                <h3>Loading...</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum voluptatum quis illo praesentium ut aperiam tempora, impedit aspernatur repellendus reprehenderit ullam itaque libero aut laborum molestias mollitia? Ullam similique voluptatum quod nihil vero id sint est totam recusandae sed.</p>
+            </div>
+            <div class="toggle"></div>
+        </div>
+    </div>
+    <script>
+        const container = document.querySelector('.container')
+        const body = document.querySelector('.body')
+        const toggle = document.querySelector('.toggle')
+        toggle.addEventListener('click', openBox)
+        function openBox(){
+            container.classList.toggle('active')
+            toggle.classList.toggle('active')
+            body.classList.toggle('active')
+
+        }
+    </script>
+</body>
+</html>
